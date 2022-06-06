@@ -6,7 +6,7 @@
 html {
   height: 100%; }
 
-.h3, .section-3-index h3, .section-marcas h3 {
+.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-marcas-botines h3 {
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
   text-align: center;
@@ -340,6 +340,121 @@ header .nav-link {
     justify-content: space-around;
     align-items: center; } }
 
+.section-indumentaria .div-col-indumentaria {
+  padding: 0px; }
+  .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol, .section-indumentaria .div-col-indumentaria .div-short-de-futbol, .section-indumentaria .div-col-indumentaria .div-conjuntos, .section-indumentaria .div-col-indumentaria .div-buzos-camperas {
+    background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/camiseta-de-futbol.webp);
+    width: 100%;
+    height: 200px;
+    background-size: 100% 200px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center; }
+    .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol a, .section-indumentaria .div-col-indumentaria .div-short-de-futbol a, .section-indumentaria .div-col-indumentaria .div-conjuntos a, .section-indumentaria .div-col-indumentaria .div-buzos-camperas a {
+      text-align: center;
+      text-decoration: none;
+      font-family: "Bebas Neue", cursive;
+      font-size: 30px;
+      color: #ffffff;
+      background-color: #ff000085;
+      padding: 20px;
+      height: 60px;
+      width: 100%; }
+  .section-indumentaria .div-col-indumentaria .div-short-de-futbol {
+    background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/short.webp); }
+  .section-indumentaria .div-col-indumentaria .div-conjuntos {
+    background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/conjunto.webp); }
+  .section-indumentaria .div-col-indumentaria .div-buzos-camperas {
+    background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/camperas-buzos.webp); }
+
+.section-talles-arriba h3, .section-talles-pantalon h3 {
+  text-decoration: none;
+  text-align: start;
+  padding-left: 10px; }
+
+.section-talles-arriba table, .section-talles-pantalon table {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px; }
+  .section-talles-arriba table th, .section-talles-pantalon table th {
+    font-weight: 100; }
+  .section-talles-arriba table td, .section-talles-pantalon table td {
+    font-weight: 100; }
+
+@media screen and (min-width: 768px) {
+  .section-indumentaria h3 {
+    font-size: 30px; }
+  .section-indumentaria .div-col-indumentaria {
+    padding: 5px !important; }
+    .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol, .section-indumentaria .div-col-indumentaria .div-short-de-futbol, .section-indumentaria .div-col-indumentaria .div-conjuntos, .section-indumentaria .div-col-indumentaria .div-buzos-camperas {
+      border: solid #ff00007e 2px;
+      border-radius: 5px; }
+      .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol a, .section-indumentaria .div-col-indumentaria .div-short-de-futbol a, .section-indumentaria .div-col-indumentaria .div-conjuntos a, .section-indumentaria .div-col-indumentaria .div-buzos-camperas a {
+        text-align: start; }
+  .section-3-index h3 {
+    font-size: 30px; } }
+
+@media screen and (min-width: 992px) {
+  .section-indumentaria h3 {
+    animation-name: h3-indumentaria-animation;
+    animation-duration: 3s; }
+  @keyframes h3-indumentaria-animation {
+    0% {
+      width: 20%; }
+    100% {
+      width: 100%; } }
+  .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol, .section-indumentaria .div-col-indumentaria .div-short-de-futbol, .section-indumentaria .div-col-indumentaria .div-conjuntos, .section-indumentaria .div-col-indumentaria .div-buzos-camperas {
+    height: 300px;
+    background-size: 100% 300px; }
+    .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol a, .section-indumentaria .div-col-indumentaria .div-short-de-futbol a, .section-indumentaria .div-col-indumentaria .div-conjuntos a, .section-indumentaria .div-col-indumentaria .div-buzos-camperas a {
+      height: 80px;
+      transition: all 0.8s ease-in-out; }
+      .section-indumentaria .div-col-indumentaria .div-camisetas-de-futbol a:hover, .section-indumentaria .div-col-indumentaria .div-short-de-futbol a:hover, .section-indumentaria .div-col-indumentaria .div-conjuntos a:hover, .section-indumentaria .div-col-indumentaria .div-buzos-camperas a:hover {
+        height: 100px;
+        background-color: #6e0303d5;
+        font-size: 35px; }
+  .section-talles-arriba, .section-talles-pantalon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .section-talles-arriba table, .section-talles-pantalon table {
+      width: 90%; } }
+
+.section-marcas-botines .section-botines-div-adidas, .section-marcas-botines .section-botines-div-nike, .section-marcas-botines .section-botines-div-puma, .section-marcas-botines .section-botines-div-umbro {
+  background-image: url(../multimedia/img/botines/adidas/botines-adidas-fondo.webp);
+  width: 100%;
+  height: 201px;
+  background-size: 100% 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 0px 10px;
+  border: #ff040477 solid 3px;
+  border-radius: 3px; }
+  .section-marcas-botines .section-botines-div-adidas a, .section-marcas-botines .section-botines-div-nike a, .section-marcas-botines .section-botines-div-puma a, .section-marcas-botines .section-botines-div-umbro a {
+    background-color: #ff0000d0;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
+    font-style: italic;
+    padding: 2px 20%;
+    margin-bottom: 30px;
+    border-radius: 2px; }
+
+.section-marcas-botines .section-botines-div-nike {
+  background-image: url(../multimedia/img/botines/nike/botines-nike-fondo.webp); }
+
+.section-marcas-botines .section-botines-div-puma {
+  background-image: url(../multimedia/img/botines/puma/botines-puma-fondo.webp); }
+
+.section-marcas-botines .section-botines-div-umbro {
+  background-image: url(../multimedia/img/botines/umbro/botines-umbro-fondo.webp); }
+
 .footer-logo-a {
   display: flex;
   flex-direction: column;
@@ -357,7 +472,7 @@ header .nav-link {
     .footer-div-1 ul li {
       color: #ffffff;
       font-family: "Bebas Neue", cursive;
-      font-size: 35px;
+      font-size: 25px;
       list-style: none; }
       .footer-div-1 ul li .footer-ul-link {
         color: #ffffff;

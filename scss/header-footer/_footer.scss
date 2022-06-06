@@ -19,7 +19,7 @@
         li {
             color: $color-2;
             font-family: $fuente-principal;
-            font-size: $fuente-size;
+            font-size: $fuente-size - 10px;
             list-style: none;
 
             .footer-ul-link {

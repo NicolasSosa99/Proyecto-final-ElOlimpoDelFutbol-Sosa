@@ -1,0 +1,171 @@
+//MAIN-INDUMENTARIA MOBILE-FIRST
+
+//Seccion indumentaria
+.section-indumentaria {
+    
+    h3 {
+        @extend .h3;
+    }
+
+    .div-col-indumentaria {
+        
+        padding: 0px;
+    
+        .div-camisetas-de-futbol {
+            
+            background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/camiseta-de-futbol.webp);
+            
+            width: 100%;
+            height: 200px;
+            background-size: 100% 200px;
+            margin-bottom: 10px;
+        
+            @include caja-flex( flex, column, end, center);
+        
+            a {
+                
+                text-align: center;
+                text-decoration: none;
+                font-family: $fuente-principal;
+                font-size: $fuente-size - 5px;
+                color: $color-2;
+        
+                background-color: $color-5;
+                padding: 20px;
+                height: 60px;
+                width: 100%;
+        
+            }
+    
+        }
+    
+        .div-short-de-futbol {
+            background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/short.webp);
+    
+            @extend .div-camisetas-de-futbol;
+        }
+    
+        .div-conjuntos {
+            background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/conjunto.webp);
+    
+            @extend .div-camisetas-de-futbol;
+        }
+    
+        .div-buzos-camperas {
+            background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/camperas-buzos.webp);
+    
+            @extend .div-camisetas-de-futbol;
+        }
+    }
+}
+
+//Seccion Talles
+.section-talles-arriba {
+
+    h3 {
+        text-decoration: none;
+        text-align: start;
+        padding-left: 10px;
+        @extend .h3;
+    }
+
+    table {
+        font-family: $fuente-principal;
+        font-size: $fuente-size - 15px;
+        
+        th {
+            font-weight: 100;
+        }
+
+        td {
+            font-weight: 100;
+        }
+    }
+}
+
+.section-talles-pantalon {
+    @extend .section-talles-arriba;
+}
+
+//APLICANDO MEDIA
+
+//Tamaño-MD
+@include mobile-first(md) {
+
+    .section-indumentaria {
+
+        h3 {
+            font-size: $fuente-size - 5px;
+        }
+    
+        
+        .div-col-indumentaria {
+        
+            padding: 5px !important;
+        
+            .div-camisetas-de-futbol {
+            
+                border: $border-1;
+                border-radius: 5px;
+    
+                a {
+                    text-align: start;
+                }
+            }
+        }
+    }
+
+    .section-3-index {
+        h3 {
+            font-size: $fuente-size - 5px;
+        }
+    }
+
+}
+
+//Tamaño-LG
+@include mobile-first(lg) {
+
+    //seccion indumentaria
+    .section-indumentaria {
+        
+        h3 {
+            animation-name: h3-indumentaria-animation;
+            animation-duration: 3s;
+
+            @keyframes h3-indumentaria-animation {
+                0% {width: 20%;}
+                100% {width: 100%;}
+            }
+        }
+
+        .div-col-indumentaria {
+        
+            .div-camisetas-de-futbol {
+                height: 300px;
+                background-size: 100% 300px;
+            
+                a {
+                    height: 80px;
+                    transition: $transiciones;
+                    
+                    &:hover {
+                        height: 100px;
+                        background-color: $color-4;
+                        font-size: $fuente-size
+                    }
+                }
+            }
+        }
+    }
+
+    //seccion talles
+    .section-talles-arriba {
+        @include caja-flex (flex, column, center, center);
+        width: 100%;
+        
+        table {
+            width: 90%;
+        }
+    }
+}
