@@ -1,0 +1,103 @@
+// Mixin para contenedor flex
+@mixin caja-flex( $dis, $direction, $just , $aling ) {
+    display: $dis;
+    flex-direction: $direction;
+    justify-content: $just;
+    align-items: $aling;
+}
+
+// Map y Mixin para Media
+$breackpoints: (
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1024px,
+);
+
+@mixin mobile-first ($brackpoint) {
+    @media screen and (min-width: map-get($breackpoints, $brackpoint)) {
+        @content;
+    }
+}
+
+//Extend h3
+.h3 {
+    font-family: $fuente-principal;
+    font-size: $fuente-size - 10px;
+    text-align: center;
+    text-decoration: overline;
+    font-style: oblique;
+    color: $color-2;
+    background-color: $color-3;
+
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+
+//Extend Carousel-Productos
+.carousel-productos {
+    width: 280px;
+    box-shadow: 0 0 5px 3px;
+    height: 400px;
+
+    div {
+        width: 280px;
+        text-align: center;
+
+        div {
+            height: 400px;
+            width: 100%;
+
+            img {
+                margin: 0;
+                height: 250px;
+            }
+
+            
+            h5 {
+                font-family: $fuente-principal;
+                font-size: $fuente-size - 15px;
+                margin-bottom: 2px;
+            }
+            
+            p {
+                font-family: $fuente-principal;
+                font-size: $fuente-size - 10px;
+                color: #3aa70f;
+                margin-bottom: 1px;
+            }
+
+            a {
+                
+                button {
+                    font-family: $fuente-principal;
+                    font-size: $fuente-size - 10px;
+                }
+
+            }
+        }
+    }
+}
+
+//Extend Seccion-4-index
+.section-4-index-li {
+    background-size: cover;
+    width: 100%;
+    height: 200px;
+
+    @include caja-flex( flex, row, center, center );
+    border-radius: 3px;
+
+    a {
+        text-decoration: none;
+        font-family: $fuente-principal;
+        font-size: $fuente-size - 5px;
+        color: $color-2;
+        
+        background-color: $color-1;
+        border-radius: 3px;
+        padding: 0px 10px;
+    }
+}

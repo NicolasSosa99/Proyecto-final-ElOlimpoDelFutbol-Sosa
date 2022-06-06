@@ -1,0 +1,104 @@
+//Header Mobile
+
+header {
+    
+    a {
+        @include caja-flex(flex, column, center, center);
+
+        img {
+            height: $height-img - 220px;
+            width: $width-img - 200px;
+        }
+    }
+    
+    h1 {
+        font-family: $fuente-principal;
+        font-size: $fuente-size;
+        color: $color-2;
+        background-color: $color-1;
+        border-radius: 3px;
+        text-align: center;
+    }
+
+    .form-buscador {
+        height: 30px;
+        
+        .button-buscador {
+            @include caja-flex (flex, column, center, center);
+
+            font-family: $fuente-principal;
+            color: $color-2;
+            border-radius: 3px;
+            border: $border-1;
+            font-size: $fuente-size - 15px;
+        }
+
+        input {
+            border: $border-1;
+        }
+    }
+
+    .nav-button {
+        border: $border-1 !important;
+    }
+
+    .nav-link {
+        font-family: $fuente-principal;
+        font-size: $fuente-size - 15px;
+        text-align: center;
+    }
+}
+
+//Aplicando Media
+
+@include mobile-first(md) {
+
+    .navbar-nav {
+        background-color: $color-1;
+        border-radius: 3px;
+        width: 100%;
+        
+        .nav-item {
+            width: 100%;
+        }
+    }
+}
+
+@include mobile-first(lg) {
+    header {
+        position: fixed;
+        z-index: 3;
+        width: 100%;
+        top: 0;
+        left: 0;
+        
+        a {
+            img {
+                height: $height-img - 230px;
+                width: $width-img - 200px;
+
+                animation-name: logo-animation;
+                animation-duration: 3s;
+                position: relative;
+            }
+
+            @keyframes logo-animation {
+                0% {right: 100%;}
+                100% { right: 0;}
+            }
+        }
+
+        h1 {
+            font-size: $fuente-size - 2px;
+
+            animation-name: h1-animation;
+            animation-duration: 3s;
+            position: relative;
+        }
+
+        @keyframes h1-animation {
+            0% {left: 300%;}
+            100% {left: 0;}
+        }
+    }
+}

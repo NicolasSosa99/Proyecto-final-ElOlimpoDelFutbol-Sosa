@@ -1,0 +1,397 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  height: 100%; }
+
+.h3, .section-3-index h3, .section-marcas h3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 25px;
+  text-align: center;
+  text-decoration: overline;
+  font-style: oblique;
+  color: #ffffff;
+  background-color: #ff0000d0;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 10px;
+  width: 100%; }
+
+.carousel-productos, .section-3-index div {
+  width: 280px;
+  box-shadow: 0 0 5px 3px;
+  height: 400px; }
+  .carousel-productos div, .section-3-index div div {
+    width: 280px;
+    text-align: center; }
+    .carousel-productos div div, .section-3-index div div div {
+      height: 400px;
+      width: 100%; }
+      .carousel-productos div div img, .section-3-index div div div img {
+        margin: 0;
+        height: 250px; }
+      .carousel-productos div div h5, .section-3-index div div div h5 {
+        font-family: "Bebas Neue", cursive;
+        font-size: 20px;
+        margin-bottom: 2px; }
+      .carousel-productos div div p, .section-3-index div div div p {
+        font-family: "Bebas Neue", cursive;
+        font-size: 25px;
+        color: #3aa70f;
+        margin-bottom: 1px; }
+      .carousel-productos div div a button, .section-3-index div div div a button {
+        font-family: "Bebas Neue", cursive;
+        font-size: 25px; }
+
+.section-4-index-li, .section-4-index-ul .section-4-index-li-1, .section-4-index-ul .section-4-index-li-2, .section-4-index-ul .section-4-index-li-3 {
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3px; }
+  .section-4-index-li a, .section-4-index-ul .section-4-index-li-1 a, .section-4-index-ul .section-4-index-li-2 a, .section-4-index-ul .section-4-index-li-3 a {
+    text-decoration: none;
+    font-family: "Bebas Neue", cursive;
+    font-size: 30px;
+    color: #ffffff;
+    background-color: #ff00007e;
+    border-radius: 3px;
+    padding: 0px 10px; }
+
+header a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  header a img {
+    height: 180px;
+    width: 200px; }
+
+header h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 35px;
+  color: #ffffff;
+  background-color: #ff00007e;
+  border-radius: 3px;
+  text-align: center; }
+
+header .form-buscador {
+  height: 30px; }
+  header .form-buscador .button-buscador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bebas Neue", cursive;
+    color: #ffffff;
+    border-radius: 3px;
+    border: solid #ff00007e 2px;
+    font-size: 20px; }
+  header .form-buscador input {
+    border: solid #ff00007e 2px; }
+
+header .nav-button {
+  border: solid #ff00007e 2px !important; }
+
+header .nav-link {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  text-align: center; }
+
+@media screen and (min-width: 768px) {
+  .navbar-nav {
+    background-color: #ff00007e;
+    border-radius: 3px;
+    width: 100%; }
+    .navbar-nav .nav-item {
+      width: 100%; } }
+
+@media screen and (min-width: 992px) {
+  header {
+    position: fixed;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    left: 0; }
+    header a img {
+      height: 170px;
+      width: 200px;
+      animation-name: logo-animation;
+      animation-duration: 3s;
+      position: relative; }
+  @keyframes logo-animation {
+    0% {
+      right: 100%; }
+    100% {
+      right: 0; } }
+    header h1 {
+      font-size: 33px;
+      animation-name: h1-animation;
+      animation-duration: 3s;
+      position: relative; }
+  @keyframes h1-animation {
+    0% {
+      left: 300%; }
+    100% {
+      left: 0; } } }
+
+.section-1-img-caurosel {
+  height: 200px; }
+
+.section-index-img-adidas, .section-index-img-nike {
+  width: 100%;
+  min-height: 200px;
+  margin: 5px 0px; }
+
+.section-index-img-nike {
+  margin: 0px; }
+
+.section-3-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 20px; }
+
+.section-4-index-ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin-top: 20px; }
+  .section-4-index-ul .section-4-index-li-1 {
+    background-image: url(../multimedia/img/indumentaria/indumentaria.webp); }
+  .section-4-index-ul .section-4-index-li-2 {
+    background-image: url(../multimedia/img/botines/botines.webp);
+    background-position-y: bottom;
+    margin: 10px 0px; }
+  .section-4-index-ul .section-4-index-li-3 {
+    background-image: url(../multimedia/img/accesorios/accesorios.webp);
+    background-position-y: 250px; }
+
+.section-marcas div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000; }
+  .section-marcas div a {
+    border: solid #353535 3px;
+    height: 120px;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 0px; }
+
+.section-pagos {
+  text-align: center;
+  margin-top: 15px;
+  box-shadow: 0 -5px 8px 1px #0000004d; }
+  .section-pagos img {
+    margin: 5px 10px; }
+
+@media screen and (min-width: 768px) {
+  .section-1-div {
+    height: 400px; }
+    .section-1-div .section-1-img-caurosel {
+      height: 400px; }
+  .section-adidas-nike {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center; }
+    .section-adidas-nike .section-index-img-adidas, .section-adidas-nike .section-index-img-nike {
+      width: 80%;
+      max-height: 600px;
+      margin: 15px 0px;
+      border-radius: 5px;
+      border: solid 2px #ff0000d0; }
+    .section-adidas-nike .section-index-img-nike {
+      width: 80%;
+      min-height: 200px;
+      border-radius: 5px;
+      border: solid 2px #ff0000d0;
+      margin-bottom: 15px; }
+  .section-3-index .carousel-productos, .section-3-index div {
+    width: 350px; }
+    .section-3-index .carousel-productos div, .section-3-index div div {
+      width: 350px; }
+  .section-4-index-ul .section-4-index-li-1 {
+    background-position-y: 600px; }
+    .section-4-index-ul .section-4-index-li-1 a {
+      font-size: 35px; }
+  .section-4-index-ul .section-4-index-li-2 {
+    background-position-y: 400px; }
+    .section-4-index-ul .section-4-index-li-2 a {
+      font-size: 35px; }
+  .section-4-index-ul .section-4-index-li-3 {
+    background-position-y: 400px; }
+    .section-4-index-ul .section-4-index-li-3 a {
+      font-size: 35px; }
+  .section-marcas div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #000000; } }
+
+@media screen and (min-width: 992px) {
+  .body-page {
+    margin-top: 218px; }
+  .section-1-div {
+    height: 500px; }
+    .section-1-div .section-1-img-caurosel {
+      height: 500px; }
+  .section-adidas-nike .section-index-img-adidas, .section-adidas-nike .section-index-img-nike {
+    transition: all 1s; }
+    .section-adidas-nike .section-index-img-adidas:hover, .section-adidas-nike .section-index-img-nike:hover {
+      opacity: 0.5;
+      box-shadow: 0px 0px 5px 8px #6e0303d5; }
+  .section-3-index h3 {
+    font-size: 30px; }
+  .section-4-index-ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px 0px; }
+    .section-4-index-ul .section-4-index-li-1 {
+      width: 300px;
+      height: 300px;
+      background-position-y: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: #000000 solid 3px; }
+      .section-4-index-ul .section-4-index-li-1 a {
+        background-color: #ff00007e;
+        border-radius: 5px;
+        padding: 0px 10px;
+        transition: all 0.8s ease-in-out; }
+        .section-4-index-ul .section-4-index-li-1 a:hover {
+          background-color: #4d0202f3;
+          color: #ffffff;
+          font-size: 40px; }
+    .section-4-index-ul .section-4-index-li-2 {
+      width: 300px;
+      height: 300px;
+      background-position-y: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: #000000 solid 3px; }
+      .section-4-index-ul .section-4-index-li-2 a {
+        background-color: #ff00007e;
+        border-radius: 5px;
+        padding: 0px 10px;
+        transition: all 0.8s ease-in-out; }
+        .section-4-index-ul .section-4-index-li-2 a:hover {
+          background-color: #4d0202f3;
+          color: #ffffff;
+          font-size: 40px; }
+    .section-4-index-ul .section-4-index-li-3 {
+      width: 300px;
+      height: 300px;
+      background-position-y: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      border: #000000 solid 3px; }
+      .section-4-index-ul .section-4-index-li-3 a {
+        background-color: #ff00007e;
+        border-radius: 5px;
+        padding: 0px 10px;
+        transition: all 0.8s ease-in-out; }
+        .section-4-index-ul .section-4-index-li-3 a:hover {
+          background-color: #4d0202f3;
+          color: #ffffff;
+          font-size: 40px; }
+  .section-marcas h3 {
+    font-size: 30px; }
+  .section-pagos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    box-shadow: 0 -5px 8px 1px #0000004d; } }
+
+@media screen and (min-width: 1024px) {
+  .section-adidas-nike {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center; } }
+
+.footer-logo-a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+  .footer-logo-a img {
+    height: 150px;
+    width: 200px; }
+
+.footer-div-1 {
+  background-color: #ff00007e; }
+  .footer-div-1 ul {
+    text-align: center;
+    padding: 0; }
+    .footer-div-1 ul li {
+      color: #ffffff;
+      font-family: "Bebas Neue", cursive;
+      font-size: 35px;
+      list-style: none; }
+      .footer-div-1 ul li .footer-ul-link {
+        color: #ffffff;
+        text-decoration: none; }
+      .footer-div-1 ul li .footer-img-tel {
+        height: 20px;
+        width: 20px;
+        margin: 0px 5px; }
+
+.footer-div-social {
+  text-align: center;
+  margin: 10px 0px; }
+  .footer-div-social img {
+    margin: 0px 5px; }
+
+@media screen and (min-width: 992px) {
+  .footer-div-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #35353500;
+    align-items: center;
+    margin-top: 10px; }
+    .footer-div-1 ul {
+      text-align: start; }
+      .footer-div-1 ul li {
+        font-size: 22px; }
+        .footer-div-1 ul li .footer-ul-link {
+          transition: all; }
+        .footer-div-1 ul li .footer-ul-link:hover {
+          color: #ff00007e; }
+  .footer-div-social img {
+    transition: all 0.8s ease-in-out; }
+    .footer-div-social img:hover {
+      height: 50px;
+      width: 50px; } }
