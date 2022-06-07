@@ -1,0 +1,33 @@
+//MAIN-COMO COMPRAR MOBILE FIRST
+
+//Seccion como comprar
+.section-como-comprar {
+
+    h3 {
+        @extend .h3-sucursales;
+    }
+
+    div {
+        padding-left: 20px;
+    
+        p {
+            font-family: $fuente-principal;
+            font-size: $fuente-size - 18px;
+        }
+    }
+}
+
+//APLICANDO MEDIA
+
+//Tamaño-LG
+@include mobile-first(lg) {
+
+    .section-como-comprar {
+
+        div {
+            p {
+                font-size: $fuente-size - 15px;
+            }
+        }
+    }
+}

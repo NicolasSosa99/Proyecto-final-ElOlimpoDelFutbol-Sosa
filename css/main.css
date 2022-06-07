@@ -6,7 +6,7 @@
 html {
   height: 100%; }
 
-.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-talles-calzado h3, .section-marcas-botines h3, .section-contacto h3, .h3-sucursales, .section-tyc h3 {
+.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-talles-calzado h3, .section-marcas-botines h3, .section-contacto h3, .h3-sucursales, .section-tyc h3, .section-como-comprar h3, .section-preguntas-frecuentes h3 {
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
   text-align: center;
@@ -115,7 +115,7 @@ header .nav-link {
 @media screen and (min-width: 992px) {
   header {
     position: fixed;
-    z-index: 3;
+    z-index: 9;
     width: 100%;
     top: 0;
     left: 0; }
@@ -560,7 +560,7 @@ header .nav-link {
       color: #ffffff;
       height: 55px; } }
 
-.h3-sucursales, .section-tyc h3 {
+.h3-sucursales, .section-tyc h3, .section-como-comprar h3, .section-preguntas-frecuentes h3 {
   text-align: start;
   text-decoration: none; }
 
@@ -580,13 +580,13 @@ header .nav-link {
     font-family: sans-serif; }
 
 @media screen and (min-width: 768px) {
-  .h3-sucursales, .section-tyc h3 {
+  .h3-sucursales, .section-tyc h3, .section-como-comprar h3, .section-preguntas-frecuentes h3 {
     padding-left: 15px; }
   .section-sucursales div h4 {
     font-size: 25px; } }
 
 @media screen and (min-width: 1024px) {
-  .h3-sucursales, .section-tyc h3 {
+  .h3-sucursales, .section-tyc h3, .section-como-comprar h3, .section-preguntas-frecuentes h3 {
     font-size: 30px;
     animation-name: h3-sucursales-animation;
     animation-duration: 3s; }
@@ -622,6 +622,23 @@ header .nav-link {
     font-family: "Bebas Neue", cursive; }
     .section-tyc .accordion-item h2 button {
       font-size: 25px !important; } }
+
+.section-como-comprar div {
+  padding-left: 20px; }
+  .section-como-comprar div p {
+    font-family: "Bebas Neue", cursive;
+    font-size: 17px; }
+
+@media screen and (min-width: 992px) {
+  .section-como-comprar div p {
+    font-size: 20px; } }
+
+@media screen and (min-width: 992px) {
+  .section-preguntas-frecuentes .accordion-item {
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive; }
+    .section-preguntas-frecuentes .accordion-item h2 button {
+      font-size: 22px !important; } }
 
 .footer-logo-a {
   display: flex;

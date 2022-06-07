@@ -1,0 +1,30 @@
+//MAIN-PREGUNTAS FRECUENTES MOBILE FIRST
+
+//Seccion preguntas frecuentes
+.section-preguntas-frecuentes {
+
+    h3 {
+        @extend .h3-sucursales;
+    }
+
+}
+
+//APLICANDO MEDIA
+
+//Tamaño-LG
+@include mobile-first(lg) {
+    .section-preguntas-frecuentes {
+
+        .accordion-item {
+            font-size: $fuente-size - 15px;
+            font-family: $fuente-principal;
+    
+            h2 {
+                
+                button {
+                    font-size: $fuente-size - 13px !important;
+                }
+            }
+        }
+    }
+}

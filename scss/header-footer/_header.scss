@@ -67,7 +67,7 @@ header {
 @include mobile-first(lg) {
     header {
         position: fixed;
-        z-index: 3;
+        z-index: 9;
         width: 100%;
         top: 0;
         left: 0;
