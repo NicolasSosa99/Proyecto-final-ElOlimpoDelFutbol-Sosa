@@ -52,3 +52,46 @@
         @extend .section-botines-div-adidas;
     }
 }
+
+.section-talles-calzado {
+    
+    text-align: center;
+    @extend .section-talles-arriba;
+}
+
+//APLICANDO MEDIA
+
+//Tamaño-LG
+@include mobile-first(lg) {
+    
+    .section-marcas-botines {
+
+        h3 {
+            font-size: $fuente-size - 5px;
+            animation-name: h3-botines-animation;
+            animation-duration: 3s;
+
+            @keyframes h3-botines-animation {
+                0% {width: 20%;}
+                100% {width: 100%;}
+            }
+        }
+
+        .section-botines-div-adidas {
+            height: 301px;
+            background-size: 100% 300px;
+
+            a {
+                font-size: $fuente-size;
+                transition: $transiciones;
+
+                &:hover {
+                    color: $color-2;
+                    background-color: $color-4;
+                    font-size: $fuente-size + 10px;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}

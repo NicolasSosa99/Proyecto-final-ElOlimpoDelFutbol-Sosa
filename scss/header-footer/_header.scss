@@ -100,5 +100,25 @@ header {
             0% {left: 300%;}
             100% {left: 0;}
         }
+
+        .nav-link {
+            transition: all;
+
+            &:hover {
+                font-weight: 700;
+            }
+        }
     }
+}
+
+@include mobile-first(xxl) {
+    
+    header {
+
+        .nav-link {
+            font-size: $fuente-size - 10px;
+        }
+
+    }
+    
 }

@@ -12,6 +12,7 @@ $breackpoints: (
     md: 768px,
     lg: 992px,
     xl: 1024px,
+    xxl: 1320px,
 );
 
 @mixin mobile-first ($brackpoint) {
@@ -53,6 +54,7 @@ $breackpoints: (
             img {
                 margin: 0;
                 height: 250px;
+                width: 250px;
             }
 
             

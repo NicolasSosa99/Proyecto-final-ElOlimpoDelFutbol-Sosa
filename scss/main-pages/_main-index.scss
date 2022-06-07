@@ -305,6 +305,16 @@
         h3 {
             font-size: $fuente-size - 5px;
         }
+
+        a {
+            transition: $transiciones;
+
+            &:hover {
+                background-color: #353535;
+                height: 150px;
+                width: 150px
+            }
+        }
     }
 
     // Seccion forma de pago

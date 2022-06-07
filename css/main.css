@@ -6,7 +6,7 @@
 html {
   height: 100%; }
 
-.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-marcas-botines h3 {
+.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-talles-calzado h3, .section-marcas-botines h3 {
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
   text-align: center;
@@ -31,7 +31,8 @@ html {
       width: 100%; }
       .carousel-productos div div img, .section-3-index div div div img {
         margin: 0;
-        height: 250px; }
+        height: 250px;
+        width: 250px; }
       .carousel-productos div div h5, .section-3-index div div div h5 {
         font-family: "Bebas Neue", cursive;
         font-size: 20px;
@@ -138,7 +139,15 @@ header .nav-link {
     0% {
       left: 300%; }
     100% {
-      left: 0; } } }
+      left: 0; } }
+    header .nav-link {
+      transition: all; }
+      header .nav-link:hover {
+        font-weight: 700; } }
+
+@media screen and (min-width: 1320px) {
+  header .nav-link {
+    font-size: 25px; } }
 
 .section-1-img-caurosel {
   height: 200px; }
@@ -325,6 +334,12 @@ header .nav-link {
           font-size: 40px; }
   .section-marcas h3 {
     font-size: 30px; }
+  .section-marcas a {
+    transition: all 0.8s ease-in-out; }
+    .section-marcas a:hover {
+      background-color: #353535;
+      height: 150px;
+      width: 150px; }
   .section-pagos {
     display: flex;
     flex-direction: row;
@@ -369,17 +384,17 @@ header .nav-link {
   .section-indumentaria .div-col-indumentaria .div-buzos-camperas {
     background-image: linear-gradient(0deg, #00000046, #00000046), url(../multimedia/img/indumentaria/camperas-buzos.webp); }
 
-.section-talles-arriba h3, .section-talles-pantalon h3 {
+.section-talles-arriba h3, .section-talles-pantalon h3, .section-talles-calzado h3 {
   text-decoration: none;
   text-align: start;
   padding-left: 10px; }
 
-.section-talles-arriba table, .section-talles-pantalon table {
+.section-talles-arriba table, .section-talles-pantalon table, .section-talles-calzado table {
   font-family: "Bebas Neue", cursive;
   font-size: 20px; }
-  .section-talles-arriba table th, .section-talles-pantalon table th {
+  .section-talles-arriba table th, .section-talles-pantalon table th, .section-talles-calzado table th {
     font-weight: 100; }
-  .section-talles-arriba table td, .section-talles-pantalon table td {
+  .section-talles-arriba table td, .section-talles-pantalon table td, .section-talles-calzado table td {
     font-weight: 100; }
 
 @media screen and (min-width: 768px) {
@@ -414,13 +429,13 @@ header .nav-link {
         height: 100px;
         background-color: #6e0303d5;
         font-size: 35px; }
-  .section-talles-arriba, .section-talles-pantalon {
+  .section-talles-arriba, .section-talles-pantalon, .section-talles-calzado {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%; }
-    .section-talles-arriba table, .section-talles-pantalon table {
+    .section-talles-arriba table, .section-talles-pantalon table, .section-talles-calzado table {
       width: 90%; } }
 
 .section-marcas-botines .section-botines-div-adidas, .section-marcas-botines .section-botines-div-nike, .section-marcas-botines .section-botines-div-puma, .section-marcas-botines .section-botines-div-umbro {
@@ -454,6 +469,31 @@ header .nav-link {
 
 .section-marcas-botines .section-botines-div-umbro {
   background-image: url(../multimedia/img/botines/umbro/botines-umbro-fondo.webp); }
+
+.section-talles-calzado {
+  text-align: center; }
+
+@media screen and (min-width: 992px) {
+  .section-marcas-botines h3 {
+    font-size: 30px;
+    animation-name: h3-botines-animation;
+    animation-duration: 3s; }
+  @keyframes h3-botines-animation {
+    0% {
+      width: 20%; }
+    100% {
+      width: 100%; } }
+  .section-marcas-botines .section-botines-div-adidas, .section-marcas-botines .section-botines-div-nike, .section-marcas-botines .section-botines-div-puma, .section-marcas-botines .section-botines-div-umbro {
+    height: 301px;
+    background-size: 100% 300px; }
+    .section-marcas-botines .section-botines-div-adidas a, .section-marcas-botines .section-botines-div-nike a, .section-marcas-botines .section-botines-div-puma a, .section-marcas-botines .section-botines-div-umbro a {
+      font-size: 35px;
+      transition: all 0.8s ease-in-out; }
+      .section-marcas-botines .section-botines-div-adidas a:hover, .section-marcas-botines .section-botines-div-nike a:hover, .section-marcas-botines .section-botines-div-puma a:hover, .section-marcas-botines .section-botines-div-umbro a:hover {
+        color: #ffffff;
+        background-color: #6e0303d5;
+        font-size: 45px;
+        text-decoration: underline; } }
 
 .footer-logo-a {
   display: flex;
