@@ -1,0 +1,54 @@
+//MAIN-TERMINOS Y CONDICIONES MOBILE-FIRST
+
+//Seccion Terminos y condiciones
+.section-tyc {
+
+    h3 {
+        @extend .h3-sucursales;
+    }
+
+    .accordion-item {
+        font-size: $fuente-size - 18px;
+        font-family: $fuente-principal;
+
+        h2 {
+            
+            button {
+                font-size: $fuente-size - 15px !important;
+            }
+        }
+    }
+}
+
+//APLICANDO MEDIA 
+
+//Tamaño-LG
+@include mobile-first(lg) {
+
+    .section-tyc {
+
+        h3 {
+            font-size: $fuente-size - 5px;
+            animation-name: h3-terminos-animation;
+            animation-duration: 3s;
+    
+            @keyframes h3-terminos-animation {
+                0% {width: 15%;}
+                100% {width: 100%;}
+            }
+        }
+    
+        .accordion-item {
+            font-size: $fuente-size - 15px;
+            font-family: $fuente-principal;
+    
+            h2 {
+                
+                button {
+                    font-size: $fuente-size - 10px !important;
+                }
+            }
+        }
+
+    }
+}

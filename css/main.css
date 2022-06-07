@@ -6,7 +6,7 @@
 html {
   height: 100%; }
 
-.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-talles-calzado h3, .section-marcas-botines h3 {
+.h3, .section-3-index h3, .section-marcas h3, .section-indumentaria h3, .section-talles-arriba h3, .section-talles-pantalon h3, .section-talles-calzado h3, .section-marcas-botines h3, .section-contacto h3, .h3-sucursales, .section-tyc h3 {
   font-family: "Bebas Neue", cursive;
   font-size: 25px;
   text-align: center;
@@ -494,6 +494,134 @@ header .nav-link {
         background-color: #6e0303d5;
         font-size: 45px;
         text-decoration: underline; } }
+
+.section-contacto .form-contacto {
+  text-align: center;
+  margin-bottom: 30px; }
+  .section-contacto .form-contacto div {
+    margin: 15px; }
+    .section-contacto .form-contacto div p {
+      font-family: "Bebas Neue", cursive;
+      text-align: center;
+      font-size: 20px; }
+    .section-contacto .form-contacto div input {
+      height: 30px;
+      width: 200px;
+      border: solid #ff0000d0 2px; }
+  .section-contacto .form-contacto div textarea {
+    height: 150px;
+    width: 250px;
+    border: solid #ff0000d0 2px; }
+  .section-contacto .form-contacto .input-enviar {
+    height: 40px;
+    font-family: "Bebas Neue", cursive;
+    font-size: 25px; }
+
+@media screen and (min-width: 768px) {
+  .section-contacto .form-contacto div p {
+    font-size: 25px; }
+  .section-contacto .form-contacto div input {
+    height: 40px;
+    width: 250px; }
+  .section-contacto .form-contacto div textarea {
+    height: 170px;
+    width: 300px; } }
+
+@media screen and (min-width: 992px) {
+  .section-contacto h3 {
+    font-size: 30px;
+    animation-name: h3-contacto-animation;
+    animation-duration: 3s; }
+  @keyframes h3-contacto-animation {
+    0% {
+      width: 20%; }
+    100% {
+      width: 100%; } }
+  .section-contacto .form-contacto .div-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 1fr 1fr; }
+    .section-contacto .form-contacto .div-contacto div {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .section-contacto .form-contacto .div-contacto div input {
+        width: 300px; }
+  .section-contacto .form-contacto .div-textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+  .section-contacto .form-contacto .input-enviar {
+    transition: all 0.8s; }
+    .section-contacto .form-contacto .input-enviar:hover {
+      background-color: #ff0000d0;
+      color: #ffffff;
+      height: 55px; } }
+
+.h3-sucursales, .section-tyc h3 {
+  text-align: start;
+  text-decoration: none; }
+
+.section-sucursales div {
+  width: 100%;
+  border: #000000 solid 3px;
+  margin: 20px 0px;
+  text-align: center; }
+  .section-sucursales div .inframe-sucursales {
+    width: 90%;
+    height: 300px; }
+  .section-sucursales div h4 {
+    font-family: "Bebas Neue", cursive;
+    font-size: 20px;
+    margin-top: 5px; }
+  .section-sucursales div p {
+    font-family: sans-serif; }
+
+@media screen and (min-width: 768px) {
+  .h3-sucursales, .section-tyc h3 {
+    padding-left: 15px; }
+  .section-sucursales div h4 {
+    font-size: 25px; } }
+
+@media screen and (min-width: 1024px) {
+  .h3-sucursales, .section-tyc h3 {
+    font-size: 30px;
+    animation-name: h3-sucursales-animation;
+    animation-duration: 3s; }
+  @keyframes h3-sucursales-animation {
+    0% {
+      width: 15%; }
+    100% {
+      width: 100%; } }
+  .section-sucursales {
+    display: flex;
+    justify-content: space-around; }
+    .section-sucursales div {
+      margin: 10px 10px; } }
+
+.section-tyc .accordion-item {
+  font-size: 17px;
+  font-family: "Bebas Neue", cursive; }
+  .section-tyc .accordion-item h2 button {
+    font-size: 20px !important; }
+
+@media screen and (min-width: 992px) {
+  .section-tyc h3 {
+    font-size: 30px;
+    animation-name: h3-terminos-animation;
+    animation-duration: 3s; }
+  @keyframes h3-terminos-animation {
+    0% {
+      width: 15%; }
+    100% {
+      width: 100%; } }
+  .section-tyc .accordion-item {
+    font-size: 20px;
+    font-family: "Bebas Neue", cursive; }
+    .section-tyc .accordion-item h2 button {
+      font-size: 25px !important; } }
 
 .footer-logo-a {
   display: flex;

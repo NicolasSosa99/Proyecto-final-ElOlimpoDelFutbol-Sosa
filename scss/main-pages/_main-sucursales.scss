@@ -1,0 +1,76 @@
+//MAIN-SUCURSALES MOBILE-FIRST
+
+//Seccion Sucursales
+.h3-sucursales {
+    text-align: start;
+    text-decoration: none;
+    @extend .h3;
+}
+
+.section-sucursales {
+
+    div {
+        width: 100%;
+        border: #000000 solid 3px;
+        margin: 20px 0px;
+        text-align: center;
+
+        .inframe-sucursales {
+            width: 90%;
+            height: 300px;
+        }
+
+        h4 {
+            font-family: $fuente-principal;
+            font-size: $fuente-size - 15px;
+            margin-top: 5px;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+    }
+}
+
+//APLICANDO MEDIA
+
+//Tamaño-MD
+@include mobile-first(md) {
+
+    .h3-sucursales{
+        padding-left: 15px;
+    }
+    
+    .section-sucursales {
+
+        div {
+            
+            h4 {
+                font-size: $fuente-size - 10px;
+            }
+        }
+    }
+}
+
+@include mobile-first(xl) {
+    
+    .h3-sucursales {
+        font-size: $fuente-size - 5px;
+        animation-name: h3-sucursales-animation;
+        animation-duration: 3s;
+
+        @keyframes h3-sucursales-animation {
+            0% {width: 15%;}
+            100% {width: 100%;}
+        }
+    }
+    
+    .section-sucursales {
+        display: flex;
+        justify-content: space-around;
+
+        div {
+            margin: 10px 10px;
+        }
+    }
+}

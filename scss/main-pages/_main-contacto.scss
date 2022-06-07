@@ -1,0 +1,127 @@
+//MAIN-CONTACTO FULL RESPONSIVE
+
+//Seccion contacto
+.section-contacto {
+    
+    h3 {
+        @extend .h3;
+    }
+
+    .form-contacto {
+
+        text-align: center;
+        margin-bottom: 30px;
+
+        div {
+            margin: 15px;
+            
+            p {
+                font-family: $fuente-principal;
+                text-align: center;
+                font-size: $fuente-size - 15px;
+            }
+
+            input {
+                height: 30px;
+                width: 200px;
+                border: solid $color-3 2px;
+            }
+        }
+
+        div {
+            
+            textarea {
+                height: 150px;
+                width: 250px;
+                border: solid $color-3 2px;
+            }
+        }
+
+        .input-enviar {
+            height: 40px;
+            font-family: $fuente-principal;
+            font-size: $fuente-size - 10px;
+        }
+    }
+}
+
+//APLICANDO MEDIA
+
+//Tamaño-MD
+@include mobile-first(md) {
+
+    .section-contacto {
+
+        .form-contacto {
+        
+            div {
+
+                p {
+                    font-size: $fuente-size - 10px;
+                }
+
+                input {
+                    height: 40px;
+                    width: 250px;
+                }
+            }
+
+            div {
+
+                textarea {
+                    height: 170px;
+                    width: 300px;
+                }
+            }
+        }
+    }
+}
+
+//Tamaño-LG
+@include mobile-first(lg) {
+
+    .section-contacto {
+
+        h3 {
+            font-size: $fuente-size - 5px;
+            animation-name: h3-contacto-animation;
+            animation-duration: 3s;
+
+            @keyframes h3-contacto-animation {
+                0% {width: 20%;}
+                100% {width: 100%;}
+            }
+        }
+
+        .form-contacto {
+
+            .div-contacto {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-areas: 1fr 1fr;
+
+                div {
+                    @include caja-flex (flex, column, center, center);
+                    
+                    input {
+                        width: 300px;
+                    }
+                }
+            }
+
+            .div-textarea {
+                @include caja-flex (flex, column, center, center);
+            }
+
+            .input-enviar {
+                transition: all 0.8s;
+
+                &:hover {
+                    background-color: $color-3;
+                    color: $color-2;
+                    height: 55px;
+                }
+            }
+        }
+    }
+}
